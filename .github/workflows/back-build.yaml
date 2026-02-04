@@ -44,5 +44,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /root/zyoud/full
-            docker compose down
-            docker compose up -d
+            bash scripts/pull.sh
